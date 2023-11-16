@@ -1,0 +1,99 @@
+/*
+RESET
+*/
+
+* {
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+COMMON
+*/
+
+header, 
+footer{
+    padding: 20px;
+}
+
+/*
+HEADER
+*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+}
+
+header .left{
+    height: 70px;
+    display: flex;
+    object-fit: cover;
+    flex-grow: 1;
+}
+
+header h1{
+    padding-left: 10px;
+    margin-top: 15px;
+}
+
+header .right{
+    margin-top: 20px;
+}
+
+header .right button{
+    padding: 0px 20px;
+}
+
+/*
+BODY
+*/
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    background-color: #7fffd4;
+}
+
+.table{
+    margin: 50px 0px;
+    width: 600px;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+.celle{
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 1px solid black;
+}
+
+.grid10{
+    width: calc(100% / 10);
+    height: calc(600px / 10);
+}
+
+.grid9{
+    width: calc(100% / 9);
+    height: calc(600px / 9);
+}
+
+.grid7{
+    width: calc(100% / 7);
+    height: calc(600px / 7);
+}
+
+.bg-blue{
+    background-color: blue;
+}
