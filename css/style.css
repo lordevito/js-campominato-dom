@@ -60,11 +60,12 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     flex-grow: 1;
     background-color: #7fffd4;
 }
 
-.table{
+.grid{
     margin: 50px 0px;
     width: 600px;
     height: 600px;
@@ -73,27 +74,44 @@ main{
     align-content: flex-start;
 }
 
-.celle{
-    width: calc(100% / 10);
-    height: calc(100% / 10);
-    border: 1px solid black;
+.cell{
+    cursor: pointer;
 }
 
-.grid10{
+.square100{
     width: calc(100% / 10);
     height: calc(600px / 10);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
-.grid9{
+.square81{
     width: calc(100% / 9);
     height: calc(600px / 9);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.grid7{
+.square49{
     width: calc(100% / 7);
     height: calc(600px / 7);
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.bg-blue{
+.clicked{
     background-color: blue;
-}
+    color: white;
+  }
+  
+.bombed{
+    background-color: red;
+    color: white;
+  }

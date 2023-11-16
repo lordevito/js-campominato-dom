@@ -16,18 +16,22 @@
             <h1>Campo Minato</h1>
         </div>
         <div class="right">
-            <label for="rules">Difficoltà:</label>
-            <select name="option" id="rules">
-                <option value="facile">Facile</option>
-                <option value="avanzato">Avanzato</option>
-                <option value="difficile">Difficile</option>
+            <label for="level">Difficoltà</label>
+            <select class="form-select mx-2" name="level" id="level">
+              <option value="0" selected>Facile</option>
+              <option value="1">Difficile</option>
+              <option value="2">Da pazzi</option>
             </select>
-            <button class="btn">Play</button>
+            <button type="button" id="play">Play</button>
         </div>
     </header>
     <main>
+        <h2 id="remov">Clicca sul bottone Play</h2>
+        <div class="game-wrapper">
+            
+        </div>
         <div>
-            <h2 id="remov">Clicca sul bottone Play</h2>
+            <h3 class="endMessage"></h3>
         </div>
     </main>
     <footer>
